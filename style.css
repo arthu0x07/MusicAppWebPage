@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #e5e5e5e7;
+    font-family: 'Montserrat';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ /* seção 1 - menu */
+
+ /* Container que engloba a barra lateral e a main*/
+.conteiner-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Container aside que engloba todo a barra lateral */
+.aside-barralateral{
+    background-color: #040517;
+    padding: 30px;
+    width: 35%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Container que engloba as imagens e os textos iniciais*/
+.conteiner1-img{
+    height: auto;
+    width: 90%;
+    
+    margin-top: 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.conteiner1-img img{
+    width: 135px;
+    height: 125px;
+    border-radius: 5px;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+/* Esse container engloba o nome e o botão de editar profile*/
+.container1-section-texts{
+    margin-left: 2rem;
+    height: 40%;
+}
+
+.container1-section-texts h2{
+    font-size: 2.8rem;
+}
+
+/* botão edit profile */
+#link-editprofile{
+    display: flex;
+    align-items: baseline;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #6e6e6e;
+
+    margin-top: 2rem;
+}
+
+#link-editprofile i{
+    color: #6e6e6e;
+    margin-left: 4px;
+}
+
+.conteiner2-discover{
+    height: 25vh;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.menu-lateral{
+    border-top: 1px solid #6e6e6e94;
+    list-style: none;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+.menu-lateral li{
+    margin: 10px 0px;
+}
+
+.menu-lateral li a{
+    text-decoration: none;
+    color: #6e6e6e;
+}
+
+.menu-lateral li a i{
+    margin-right: 10px;
+    color: #6e6e6e;
+
+}
+
+.conteiner3-youaccount{
+    height: 25vh;
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+
+/* seção 2 - cards musicas e etc */
+
+.main-conteiner{
+    background-color: rgb(32, 15, 86);
+    height: 100vh;
+    width: 80%;
+}
