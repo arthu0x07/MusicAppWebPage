@@ -1,122 +1,372 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    color: #e5e5e5e7;
-    font-family: 'Montserrat';
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #e5e5e5e7;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
- /* seção 1 - menu */
+body {
+  overflow-x: hidden;
+  background-color: rgb(29, 22, 53);
+}
 
- /* Container que engloba a barra lateral e a main*/
-.conteiner-flex{
-    display: flex;
-    flex-direction: row;
+/* seção 1 - menu */
+
+/* Container que engloba a barra lateral e a main*/
+.conteiner-flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 /* Container aside que engloba todo a barra lateral */
-.aside-barralateral{
-    background-color: #040517;
-    padding: 30px;
-    width: 35%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.aside-barralateral {
+  background-color: #040517;
+  padding: 30px;
+  width: 300px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  animation-name: x;
+  display: flex;
+  position: static;
+  height: 200vh;
+  transform: translateX(0px);
 }
 
 /* Container que engloba as imagens e os textos iniciais*/
-.conteiner1-img{
-    height: auto;
-    width: 90%;
-    
-    margin-top: 10rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-
+.conteiner1-img {
+  margin-right: 15px;
+  margin-bottom: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.conteiner1-img img{
-    width: 135px;
-    height: 125px;
-    border-radius: 5px;
-    image-rendering: pixelated;
-    object-fit: cover;
+/* Seta o tamanho na imagem */
+.conteiner1-img img {
+  width: 115px;
+  height: 115px;
+  border-radius: 5px;
+  image-rendering: pixelated;
+  object-fit: cover;
 }
 
 /* Esse container engloba o nome e o botão de editar profile*/
-.container1-section-texts{
-    margin-left: 2rem;
-    height: 40%;
+.container1-section-texts {
+  margin-left: 2rem;
+  height: 10%;
 }
 
-.container1-section-texts h2{
-    font-size: 2.8rem;
+/* Seta o tamanho no nome do perfil */
+.container1-section-texts h2 {
+  font-size: 2.5rem;
 }
 
 /* botão edit profile */
-#link-editprofile{
-    display: flex;
-    align-items: baseline;
+#link-editprofile {
+  display: flex;
+  align-items: baseline;
 
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #6e6e6e;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #6e6e6e;
 
-    margin-top: 2rem;
+  font-weight: 900;
+
+  margin-top: 2rem;
 }
 
-#link-editprofile i{
-    color: #6e6e6e;
-    margin-left: 4px;
+/* Icone do perfil */
+#link-editprofile i {
+  color: #6e6e6e;
+  margin-left: 4px;
 }
 
-.conteiner2-discover{
-    height: 25vh;
-    width: 30%;
-    margin: 0 auto;
+/* seção menu 2 "overview, news ...*/
+.conteiner2-discover {
+  height: 20vh;
+  width: 80%;
+  margin: 0 auto 50px;
 }
 
-.menu-lateral{
-    border-top: 1px solid #6e6e6e94;
-    list-style: none;
-    font-size: 1.7rem;
-    padding-top: 1rem;
+/* Classe única para as duas seções, modifica o menu lateral */
+.menu-lateral {
+  border-top: 1px solid #6e6e6e94;
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 900;
+  padding-top: 1rem;
 }
 
-.menu-lateral li{
-    margin: 10px 0px;
+/* Espaçamento entre os elementos */
+.menu-lateral li {
+  margin: 10px 0px;
 }
 
-.menu-lateral li a{
-    text-decoration: none;
-    color: #6e6e6e;
+/* Estilizando a tag A*/
+.menu-lateral li a {
+  text-decoration: none;
+  color: #6e6e6e;
 }
 
-.menu-lateral li a i{
-    margin-right: 10px;
-    color: #6e6e6e;
-
+/* Da um espaçamento entre o texto e o icone*/
+.menu-lateral li a i {
+  margin-right: 10px;
+  color: #6e6e6e;
 }
 
-.conteiner3-youaccount{
-    height: 25vh;
-    width: 30%;
-    margin: 0 auto;
+/* O ultimo container de links */
+.conteiner3-youaccount {
+  height: 20vh;
+  width: 80%;
+  margin: 0 auto;
 }
-
-
 
 /* seção 2 - cards musicas e etc */
+.main-conteiner {
+  height: auto;
+  width: 75%;
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
 
-.main-conteiner{
-    background-color: rgb(32, 15, 86);
-    height: 100vh;
-    width: 80%;
+/* Seção do input da main */
+.conteiner-search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 4rem;
+}
+
+.conteiner-search i {
+  margin-left: auto;
+  display: none;
+}
+
+/* Altera o icone da label */
+.conteiner-search label i {
+  color: #6e6e6e;
+}
+
+/* O input em si */
+.input-search {
+  margin-left: 10px;
+  width: 70%;
+  height: 2rem;
+  background-color: rgb(29, 22, 53);
+  border: 0;
+  font-size: 2rem;
+  color: #e5e5e5e7;
+}
+
+/* Tira aquele contorno quando clicamos */
+.input-search:focus-visible {
+  outline: 0;
+}
+
+/* Modifica o texto do placeholder */
+.input-search::placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  color: #6e6e6e;
+}
+
+/* Conteiner com as musicas grande que arrasta para o lado*/
+.container-cards-music-large {
+  height: 50vh;
+  margin-bottom: 2rem;
+}
+
+.container-cards-music-large h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.container-cards {
+  height: auto;
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+/* esses webkits estilizam a scrollbar do conteiner de playlist */
+.container-cards::-webkit-scrollbar {
+  background-color: rgba(33, 27, 54, 0.993);
+  border-radius: 20px;
+  height: 10px;
+}
+
+.container-cards::-webkit-scrollbar-thumb {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(74, 7, 95) 0%, rgb(27, 3, 116) 100%);
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Coloca uma distancia entre os cards */
+.card-large {
+  margin: 0px 10px;
+}
+
+/* Estiliza a imagem */
+.card-large img {
+  max-width: 300px;
+  max-height: 200px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* titulo da playlist */
+.card-large h3 {
+  font-size: 2rem;
+  color: #e5e5e5e7;
+}
+
+/* quantidade de musicas */
+.card-large h4 {
+  font-weight: 200;
+  color: #e5e5e593;
+}
+
+/* container que engloba os cards e as tracks*/
+.container-profilesandviews {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* container que engloba os profiles*/
+.container-profileviews {
+  width: 50%;
+}
+
+/* Titulo profile views */
+.container-profilesandviews h2 {
+  margin-bottom: 20px;
+}
+
+/* card - img e titulos */
+.container-cards-profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.container-cards-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+/* conteiner titulo e dias */
+.card-profile-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1.5rem;
+}
+
+/* titulo card */
+.profile-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* texto do canto direito do card */
+.albuns-qtds {
+  margin-left: 10rem;
+}
+
+/* seção tracks */
+
+.container-tracks {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.container-tracks h2 {
+  font-size: 2rem;
+}
+
+.container-tracks-scroll {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+}
+
+.container-tracks-scroll::-webkit-scrollbar {
+  background-color: rgba(33, 27, 54, 0.993);
+  border-radius: 20px;
+  height: 10px;
+}
+
+.container-tracks-scroll::-webkit-scrollbar-thumb {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(74, 7, 95) 0%, rgb(27, 3, 116) 100%);
+  width: 70%;
+  border-radius: 10px;
+}
+
+.card-track {
+  margin-right: 2rem;
+}
+
+.card-track img {
+  border-radius: 5px;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+
+.card-track h3 {
+  color: #e5e5e5e7;
+}
+
+.card-track h4 {
+  color: #e5e5e593;
+}
+
+
+@media (max-width: 1050px) {
+  .container-profilesandviews {
+    flex-direction: column;
+    margin-top: 4.5rem;
+  }
+
+  .container-tracks {
+    width: 100%;
+  }
+
+  .container-tracks-scroll {
+    width: 100%;
+  }
+
+  .container-profileviews {
+    width: 100%;
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-conteiner {
+    width: 100%;
+  }
 }
