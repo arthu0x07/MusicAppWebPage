@@ -48,7 +48,7 @@ body {
   animation-name: x;
   display: flex;
   position: static;
-  height: 200vh;
+  height: auto;
   transform: translateX(0px);
 }
 
