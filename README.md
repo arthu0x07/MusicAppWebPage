@@ -19,4 +19,4 @@ O modelo final está disponível na pasta "design"
 
 <br>
 
-Desafio criado por  <a href="https://www.linkedin.com/in/emmanuel-messias-535621127/">Emmanuel Messias</a> :)
+Desafio criado por <a href="https://www.linkedin.com/in/emmanuel-messias-535621127/">Emmanuel Messias</a> :)
