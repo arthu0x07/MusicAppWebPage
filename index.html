@@ -1,184 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="testing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Music WebApp</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="conteiner-flex">
-        <aside class="aside-barralateral">
+      <aside class="aside-barralateral">
+        <section class="conteiner1-img">
+          <img src="assets/profile.jpg" alt="Imagem de Perfil" />
 
-            <section class="conteiner1-img">
-                <img src="assets/profile.jpg" alt="Imagem de Perfil">
-                    
-                <div class="container1-section-texts">
-                    <h2>Dany</h2>
-                    <h2>Schudler</h2>
+          <div class="container1-section-texts">
+            <h2>Dany</h2>
+            <h2>Schudler</h2>
 
-                    <a href="#" id="link-editprofile" class="effecthover"> Edit Profile <i class="fas fa-cog effecthover"></i></a>
-                </div>
-            </section>
+            <a href="#" id="link-editprofile" class="effecthover">
+              Edit Profile
+              <i class="fas fa-cog effecthover"></i>
+            </a>
+          </div>
+        </section>
 
-            <div class="conteiner-aglomerated">
-               <section class="conteiner2-discover">
-                    <nav>
-                        <ul class="menu-lateral">
-                            <li> <a href="#"> <i class="fas fa-compass"></i> Overview</a> </li>
-                            <li> <a href="#"> <i class="fas fa-newspaper"></i> News</a> </li>
-                            <li> <a href="#"> <i class="fas fa-music"></i> Playlists</a> </li>
-                            <li> <a href="#"> <i class="fas fa-broadcast-tower"></i> Discover</a> </li>                        
-                        </ul>
-                    </nav>
-                </section>
+        <div class="conteiner-aglomerated">
+          <section class="conteiner2-discover">
+            <nav>
+              <ul class="menu-lateral">
+                <li>
+                  <a href="#">
+                    <i class="fas fa-compass"></i>
+                    Overview
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-newspaper"></i>
+                    News
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-music"></i>
+                    Playlists
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-broadcast-tower"></i>
+                    Discover
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
 
-                <section class="conteiner3-youaccount">
-                    <nav>
-                        <ul class="menu-lateral">
-                            <li> <a href="#"> <i class="fas fa-chart-line"></i> Dashboard</a> </li>
-                            <li> <a href="#"> <i class="far fa-comment-alt"></i> Messages</a> </li>
-                            <li> <a href="#"> <i class="fas fa-bell"></i> Notifications</a> </li>
-                            <li> <a href="#"> <i class="fas fa-user"></i> Account</a> </li>                        
-                        </ul>
-                    </nav>
-                </section>
+          <section class="conteiner3-youaccount">
+            <nav>
+              <ul class="menu-lateral">
+                <li>
+                  <a href="#">
+                    <i class="fas fa-chart-line"></i>
+                    Dashboard
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="far fa-comment-alt"></i>
+                    Messages
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-user"></i>
+                    Account
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </aside>
+
+      <main class="main-conteiner">
+        <section class="conteiner-search">
+          <label for="search"><i class="fas fa-search"></i></label>
+          <input
+            type="text"
+            id="search"
+            class="input-search"
+            name="music"
+            placeholder="Search artists, playlist or tracks"
+          />
+          <i class="fas fa-chevron-circle-down botaomenu"></i>
+        </section>
+
+        <section class="container-cards-music-large">
+          <h2>Featured Playlist</h2>
+          <section class="container-cards">
+            <div class="card-large">
+              <div class="card-large-div-img">
+                <img src="assets/playlist1.jpg" alt="Playlist1" />
+              </div>
+              <h3>Only STARDUST</h3>
+              <h4>24 tracks</h4>
             </div>
-        </aside>
-        
-        <main class="main-conteiner">
-            <section class="conteiner-search">
-                <label for="search"><i class="fas fa-search"></i></label>
-                <input type="text" id="search" class="input-search" name="music" placeholder="Search artists, playlist or tracks">
-                <i class="fas fa-chevron-circle-down botaomenu"></i>
+
+            <div class="card-large">
+              <div class="card-large-div-img">
+                <img src="assets/playlist2.jpg" alt="Playlist2" />
+              </div>
+              <h3>Mike Vella</h3>
+              <h4>12 tracks</h4>
+            </div>
+
+            <div class="card-large">
+              <div class="card-large-div-img">
+                <img src="assets/playlist3.jpg" alt="Playlist3" />
+              </div>
+
+              <h3>the best singles s2</h3>
+              <h4>24 tracks</h4>
+            </div>
+
+            <div class="card-large">
+              <div class="card-large-div-img">
+                <img src="assets/playlist4.jpg" alt="Playlist4" />
+              </div>
+
+              <h3>Indian thebest</h3>
+              <h4>24 tracks</h4>
+            </div>
+          </section>
+        </section>
+
+        <section class="container-profilesandviews">
+          <section class="container-profileviews">
+            <h2>Profile Views</h2>
+            <div class="container-cards-profile">
+              <img src="assets/view1.jpg" alt="profile1" />
+
+              <div class="card-profile-texts">
+                <h3 class="profile-title">Jenny Villa</h3>
+                <h3 class="profile-days">1 day ago</h3>
+              </div>
+
+              <h4 class="albuns-qtds">4 albuns</h4>
+            </div>
+
+            <div class="container-cards-profile">
+              <img src="assets/view2.jpg" alt="profile2" />
+
+              <div class="card-profile-texts">
+                <h3 class="profile-title">Jenny Villa</h3>
+                <h3 class="profile-days">1 day ago</h3>
+              </div>
+
+              <h4 class="albuns-qtds">4 albuns</h4>
+            </div>
+
+            <div class="container-cards-profile">
+              <img src="assets/view3.jpg" alt="profile3" />
+
+              <div class="card-profile-texts">
+                <h3 class="profile-title">Jenny Villa</h3>
+                <h3 class="profile-days">1 day ago</h3>
+              </div>
+
+              <h4 class="albuns-qtds">4 albuns</h4>
+            </div>
+          </section>
+
+          <section class="container-tracks">
+            <h2>Tracks</h2>
+
+            <section class="container-tracks-scroll">
+              <div class="card-track">
+                <img src="assets/track1.jpg" alt="track1" />
+                <h3>Mahara Bon</h3>
+                <h4>Sexy in Paris</h4>
+              </div>
+
+              <div class="card-track">
+                <img src="assets/track2.jpg" alt="track1" />
+                <h3>Donna</h3>
+                <h4>Pseudo-Life</h4>
+              </div>
+
+              <div class="card-track">
+                <img src="assets/track3.jpg" alt="track1" />
+                <h3>Avven</h3>
+                <h4>Maginc</h4>
+              </div>
+
+              <div class="card-track">
+                <img src="assets/track4.jpg" alt="track1" />
+                <h3>Drovlt</h3>
+                <h4>Young Life</h4>
+              </div>
+
+              <div class="card-track">
+                <img src="assets/track5.jpg" alt="track1" />
+                <h3>Carllsomn</h3>
+                <h4>Ipsum Lover</h4>
+              </div>
+
+              <div class="card-track">
+                <img src="assets/track6.jpg" alt="track1" />
+                <h3>Hail the Life</h3>
+                <h4>Jenny Vill</h4>
+              </div>
+
+              <div class="card-track">
+                <img src="assets/track7.jpg" alt="track1" />
+                <h3>StarDust</h3>
+                <h4>Lonelly for you</h4>
+              </div>
             </section>
-
-            <section class="container-cards-music-large">
-                <h2>Featured Playlist</h2>
-                <section class="container-cards">
-
-                    <div class="card-large">
-                        <img src="assets/playlist1.jpg" alt="Playlist1">
-                        <h3>Only STARDUST</h3>
-                        <h4>24 tracks</h4>
-                    </div>
-
-                    <div class="card-large">
-                        <img src="assets/playlist2.jpg" alt="Playlist2">
-                        <h3>Mike Vella</h3>
-                        <h4>12 tracks</h4>
-                    </div>
-
-                    <div class="card-large">
-                        <img src="assets/playlist3.jpg" alt="Playlist3">
-                        <h3>the best singles s2</h3>
-                        <h4>24 tracks</h4>
-                    </div>
-
-                    <div class="card-large">
-                        <img src="assets/playlist4.jpg" alt="Playlist4">
-                        <h3>Indian thebest</h3>
-                        <h4>24 tracks</h4>
-                    </div>
-                </section>
-            </section>
-
-            <section class="container-profilesandviews">
-                <section class="container-profileviews">
-                    <h2>Profile Views</h2>
-                    <div class="container-cards-profile">
-                        <img src="assets/view1.jpg" alt="profile1">
-                        
-                        <div class="card-profile-texts">
-                            <h3 class="profile-title">Jenny Villa</h3>
-                            <h3 class="profile-days">1 day ago</h3>
-                        </div>
-
-                        <h4 class="albuns-qtds">4 albuns</h4>
-                    </div>
-
-                    <div class="container-cards-profile">
-                        <img src="assets/view2.jpg" alt="profile2">
-                        
-                        <div class="card-profile-texts">
-                            <h3 class="profile-title">Jenny Villa</h3>
-                            <h3 class="profile-days">1 day ago</h3>
-                        </div>
-
-                        <h4 class="albuns-qtds">4 albuns</h4>
-                    </div>
-
-                    <div class="container-cards-profile">
-                        <img src="assets/view3.jpg" alt="profile3">
-                        
-                        <div class="card-profile-texts">
-                            <h3 class="profile-title">Jenny Villa</h3>
-                            <h3 class="profile-days">1 day ago</h3>
-                        </div>
-
-                        <h4 class="albuns-qtds">4 albuns</h4>
-                    </div>
-                </section>
-
-                <section class="container-tracks">
-                    <h2>Tracks</h2>
-
-                    <section class="container-tracks-scroll">
-                        <div class="card-track">
-                            <img src="assets/track1.jpg" alt="track1">
-                            <h3>Mahara Bon</h3>
-                            <h4>Sexy in Paris</h4>
-                        </div>
-
-                        <div class="card-track">
-                            <img src="assets/track2.jpg" alt="track1">
-                            <h3>Donna</h3>
-                            <h4>Pseudo-Life</h4>
-                        </div>
-
-                        <div class="card-track">
-                            <img src="assets/track3.jpg" alt="track1">
-                            <h3>Avven</h3>
-                            <h4>Maginc</h4>
-                        </div>
-
-                        <div class="card-track">
-                            <img src="assets/track4.jpg" alt="track1">
-                            <h3>Drovlt</h3>
-                            <h4>Young Life</h4>
-                        </div>
-
-                        <div class="card-track">
-                            <img src="assets/track5.jpg" alt="track1">
-                            <h3>Carllsomn</h3>
-                            <h4>Ipsum Lover</h4>
-                        </div>
-
-                        <div class="card-track">
-                            <img src="assets/track6.jpg" alt="track1">
-                            <h3>Hail the Life</h3>
-                            <h4>Jenny Vill</h4>
-                        </div>
-
-                        <div class="card-track">
-                            <img src="assets/track7.jpg" alt="track1">
-                            <h3>StarDust</h3>
-                            <h4>Lonelly for you</h4>
-                        </div>
-                    </section>
-                </section>
-            </section>
-
-        </main>
+          </section>
+        </section>
+      </main>
     </div>
-    
+
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/96fdea3235.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/96fdea3235.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

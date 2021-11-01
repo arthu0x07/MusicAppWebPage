@@ -59,6 +59,7 @@
   .aside-barralateral {
     display: flex;
     position: absolute;
+    z-index: 8;
     height: 200vh;
     transform: translateX(-300px);
   }
