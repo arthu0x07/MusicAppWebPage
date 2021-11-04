@@ -1,4 +1,6 @@
-<br />
+<h1 align="center"> Confira a versão final -> <a href="https://arthu0x07.github.io/MusicAppWebPage/" target="_blank">MusicAppWebPage</a>
+<br /><br /><br />
+
 <p align="center">
     <img src="https://imgur.com/ipLHFFb.gif" alt="Logo" width="1000">
 </p>
